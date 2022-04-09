@@ -1,3 +1,7 @@
+/*Write a function to find the longest common prefix string amongst an array of strings.
+
+If there is no common prefix, return an empty string "".*/
+
 package main
 
 import "fmt"
@@ -48,7 +52,7 @@ func min_arr(arr []string) (string, int) {
 }
 
 func check_toFind(str, toFind string) bool {
-	if str[0:len(toFind)] == toFind {
+	if str[:len(toFind)] == toFind {
 		return true
 	}
 	return false
